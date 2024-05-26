@@ -3486,11 +3486,15 @@ input, select, textarea {
 				#banner .inner {
 					width: 100%;
 				}
-
+				#ham{
+					width: 70vw;
+				}
 		}
 
 		@media screen and (max-width: 736px) {
-
+			#ham{
+				width: 70vw;
+			}
 			#banner {
 				padding: 5em 2em 4.25em 2em ;
 				margin-bottom: -2.5em;
@@ -3589,7 +3593,9 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 980px) {
-
+		#ham{
+			width: 70vw;
+		}
 		#wrapper > header {
 			padding: 11em 3em 7.375em 3em ;
 			background-size: auto,
@@ -3606,7 +3612,9 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 736px) {
-
+		#ham{
+			width: 70vw;
+		}
 		#wrapper > header {
 			padding: 6.5em 2em 3em 2em ;
 			background-size: auto,
@@ -3908,7 +3916,9 @@ input, select, textarea {
 				}
 
 		@media screen and (max-width: 980px) {
-
+			#ham{
+				width: 70vw;
+			}
 			.wrapper {
 				margin: 4.75em 0;
 			}
@@ -3943,7 +3953,9 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
+			#ham{
+				width: 70vw;
+			}
 			.wrapper {
 				margin: 2.5em 0;
 			}
@@ -3984,7 +3996,9 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 480px) {
-
+			#ham{
+				width: 70vw;
+			}
 			.wrapper.spotlight .inner {
 				display: block;
 			}
@@ -3998,7 +4012,9 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 360px) {
-
+			#ham{
+				width: 70vw;
+			}
 			.wrapper .inner {
 				padding: 2em 1.5em 0.1em 1.5em ;
 			}
