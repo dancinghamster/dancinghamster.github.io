@@ -169,6 +169,21 @@ documentContainer.onfocus = function() {
 };
 function hamDance(e) {
 	var ham = document.getElementById('ham');
+	rotateHam(ham, e);
+
+	var ham2 = document.getElementById('ham2');
+	rotateHam(ham2, e);
+
+	var ham2 = document.getElementById('ham3');
+	rotateHam(ham3, e);
+
+	var ham2 = document.getElementById('ham4');
+	rotateHam(ham4, e);
+
+	var hammini = document.getElementById('hammini');
+	rotateHam(hammini, e);
+  }
+  function rotateHam(ham, e){
 	var rect = ham.getBoundingClientRect();
 	var x = e.clientX - rect.left;
 	var y = e.clientY - rect.top;
@@ -183,7 +198,6 @@ function hamDance(e) {
 	  (mousePosition.x / hamSize.width) * (SCALE_X * 2) - SCALE_X
 	}deg) translateZ(10px)`;
   }
-  
   function hamDanceMobile() {
 	rotationY += 0.2 * direction; 
   
