@@ -142,4 +142,71 @@
 
 			});
 
+
+
+			
 })(jQuery);
+
+var ham = document.getElementById('ham');
+var documentContainer = document.documentElement; // Change this if you have a specific container
+
+var rotationX = 0; // Initialize rotation variables for desktop
+var rotationY = 0; // Initialize rotation variables for mobile
+var SCALE_X = 8; // Adjust these values for the desired rotation range for desktop
+var SCALE_Y = 16; // Adjust these values for the desired rotation range for mobile
+var direction = 1; // Variable to track the direction of rotation
+
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+documentContainer.onblur = function() {
+  mouseHover = false;
+};
+
+documentContainer.onfocus = function() {
+  mouseHover = true;
+};
+function hamDance(e) {
+	var ham = document.getElementById('ham');
+	var rect = ham.getBoundingClientRect();
+	var x = e.clientX - rect.left;
+	var y = e.clientY - rect.top;
+	var mousePosition = { x, y };
+	var hamSize = {
+	  width: ham.offsetWidth || 0,
+	  height: ham.offsetHeight || 0,
+	};
+	ham.style.transform = `perspective(1000px) rotateX(${
+	  (mousePosition.y / hamSize.height) * -(SCALE_Y * 2) + SCALE_Y
+	}deg) rotateY(${
+	  (mousePosition.x / hamSize.width) * (SCALE_X * 2) - SCALE_X
+	}deg) translateZ(10px)`;
+  }
+  
+  function hamDanceMobile() {
+	rotationY += 0.2 * direction; 
+  
+	if (rotationY >= 25 || rotationY <= -25) {
+	  direction *= -1;
+	}
+  
+	ham.style.transform = `perspective(1000px) rotateY(${rotationY}deg) translateZ(10px)`;
+  
+	requestAnimationFrame(tiltMobile); 
+  }
+  
+  if (isMobileDevice()) {
+	hamDanceMobile();
+  } else {
+	documentContainer.addEventListener('mousemove', hamDance);
+  
+	documentContainer.onmouseout = function() {
+	  mouseHover = false;
+	  ham.style.transform = 'perspective(600px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
+	};
+  
+	documentContainer.onmouseover = function() {
+	  mouseHover = true;
+	};
+  }
