@@ -3551,7 +3551,20 @@ input, select, textarea {
 		}
 
 /* Wrapper */
+#wrapper .inner h5 {
+    margin: 18px 0 0 0;
+}
 
+.tubewrapper{
+	background-image: url(../../images/tubes.png);
+	background-repeat: repeat-y;
+    background-size: 330px;
+}
+.noborder {
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
 	#wrapper > header {
 		padding: 11em 0 2.25em 0 ;
 	}
