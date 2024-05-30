@@ -3555,16 +3555,22 @@ input, select, textarea {
     margin: 18px 0 0 0;
 }
 
-.tubewrapper{
-	background-image: url(../../images/tubes.png);
-	background-repeat: repeat-y;
-    background-size: 330px;
+.tubewrapper {
+    background-image: linear-gradient(to top, rgb(46 49 65 / 76%), #2e3141a6), url(../../images/tubes.png);
+    background-repeat: space repeat;
 }
 .noborder {
     border: none !important;
     margin: 0 !important;
     padding: 0 !important;
 }
+
+.tubewrapper .inner {
+    padding: 1.75em 1.75em 0.1em 1.75em !important;
+    background-color: #353849c7;
+    border-radius: 5px;
+}
+
 	#wrapper > header {
 		padding: 11em 0 2.25em 0 ;
 	}
