@@ -2412,14 +2412,12 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 5px;
 		border: 0;
 		display: inline-block;
 		position: relative;
 	}
 
 		.image img {
-			border-radius: 5px;
 			display: block;
 		}
 
@@ -3077,7 +3075,7 @@ input, select, textarea {
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
 		background-color: rgba(53, 56, 73, 0.95);
-		height: 3.5em;
+		height: 78px;
 		left: 0;
 		line-height: 3.5em;
 		padding: 0 1.25em;
@@ -3101,6 +3099,8 @@ input, select, textarea {
 
 			#header h1 a {
 				border: 0;
+				vertical-align: text-bottom;
+				margin-left: 10px;
 			}
 
 		#header nav {
@@ -3287,7 +3287,7 @@ input, select, textarea {
 			max-width: 100%;
 			opacity: 0;
 			position: relative;
-			width: 18em;
+			width: 24em;
 		}
 
 		#menu h2 {
@@ -3825,7 +3825,6 @@ input, select, textarea {
 			}
 
 			.wrapper.spotlight .image {
-				border-radius: 100%;
 				margin: 0 3em 2em 0;
 				width: 22em;
 				overflow: hidden;
@@ -3833,7 +3832,6 @@ input, select, textarea {
 			}
 
 				.wrapper.spotlight .image img {
-					border-radius: 100%;
 					width: 100%;
 				}
 
@@ -4189,3 +4187,28 @@ input, select, textarea {
 		}
 
 	}
+	
+
+#hammini{ 
+	margin-top:10px;
+	height: 58px;
+	width: auto !important;
+}
+#ham{
+	width: 20vw;
+}
+#one .icons li span {
+	display: block;
+	font-size: .7em;
+	text-align: center;
+}
+#one .icons li {
+	text-align: center;
+}
+
+#hamwhitepaper {
+    position: absolute;
+    right: 30vw;
+    top: 61px;
+    height: 420px;
+}
