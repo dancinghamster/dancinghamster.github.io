@@ -4212,3 +4212,23 @@ input, select, textarea {
     top: 61px;
     height: 420px;
 }
+.image-rounded {
+	border-radius: 100%;
+}
+.hamteam {
+    position: absolute;
+    top: 61px;
+    height: 420px;
+}
+.hamgif {
+	right:20vw;
+}
+.hamgif2 {
+	right:30vw;
+}
+.hamgif3 {
+	right:50vw;
+}
+.hamgif4 {
+	right:40vw;
+}
